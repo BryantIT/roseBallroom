@@ -139,6 +139,41 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
               </li>
 
               <li
+                className={isActive.key == 3 ? 'dropdown current' : 'dropdown'}
+              >
+                <Link href='#' onClick={handleMobileMenu}>
+                  Styles
+                </Link>
+                <ul
+                  style={{ display: `${isActive.key == 3 ? 'block' : 'none'}` }}
+                >
+                  <li>
+                    <Link href='/waltz' onClick={handleMobileMenu}>
+                      Waltz
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/tango' onClick={handleMobileMenu}>
+                      Tango
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/foxtrot' onClick={handleMobileMenu}>
+                      Foxtrot
+                    </Link>
+                  </li>
+                </ul>
+                <div
+                  className={
+                    isActive.key == 3 ? 'dropdown-btn open' : 'dropdown-btn'
+                  }
+                  onClick={() => handleToggle(3)}
+                >
+                  <span className='fa fa-angle-right' />
+                </div>
+              </li>
+
+              <li
                 className={isActive.key == 4 ? 'dropdown current' : 'dropdown'}
               >
                 <Link href='#' onClick={handleMobileMenu}>

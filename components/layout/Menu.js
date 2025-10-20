@@ -8,6 +8,30 @@ export default function Menu() {
       </li>
 
       <li className='dropdown'>
+        <Link href='#'>About</Link>
+        <ul>
+          <li>
+            <Link href='/our-story'>Our Story</Link>
+          </li>
+          <li>
+            <Link href='/instructors'>Instructors</Link>
+          </li>
+          <li>
+            <Link href='/locations'>Locations</Link>
+          </li>
+          <li>
+            <Link href='/testimonials'>Testimonials</Link>
+          </li>
+          <li>
+            <Link href='/pricing'>Pricing</Link>
+          </li>
+          <li>
+            <Link href='/gallery'>Gallery</Link>
+          </li>
+        </ul>
+      </li>
+
+      <li className='dropdown'>
         <Link href='#'>Classes</Link>
         <ul>
           <li>
@@ -22,13 +46,13 @@ export default function Menu() {
         <Link href='#'>Events</Link>
         <ul>
           <li>
+            <Link href='/calendar'>Calendar</Link>
+          </li>
+          <li>
             <Link href='/social-ease'>Social Ease</Link>
           </li>
           <li>
             <Link href='/dance-party'>Dance Party</Link>
-          </li>
-          <li>
-            <Link href='/bring-a-friend'>Bring A Friend</Link>
           </li>
         </ul>
       </li>
@@ -49,12 +73,7 @@ export default function Menu() {
           </li>
         </ul>
       </li>
-      <li>
-        <Link href='/calendar'>Calendar</Link>
-      </li>
-      <li>
-        <Link href='/about'>About</Link>
-      </li>
+
       <li>
         <Link href='/contact'>Contact</Link>
       </li>
