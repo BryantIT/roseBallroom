@@ -3,8 +3,6 @@ import { useEffect, useState } from 'react'
 import BackToTop from '../elements/BackToTop'
 import DataBg from '../elements/DataBg'
 import Breadcrumb from './Breadcrumb'
-import SearchPopup from './SearchPopup'
-import Sidebar from './Sidebar'
 import Footer1 from './footer/Footer1'
 import Footer2 from './footer/Footer2'
 import Header from './header/Header'
@@ -73,9 +71,6 @@ export default function Layout({
             handleSidebar={handleSidebar}
           />
         ) : null}
-
-        <Sidebar isSidebar={isSidebar} handleSidebar={handleSidebar} />
-        <SearchPopup isPopup={isPopup} handlePopup={handlePopup} />
 
         {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
 
