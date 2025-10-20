@@ -3,7 +3,6 @@ import Banner from '@/components/sections/home3/Banner'
 import FeatureOne from '@/components/sections/home3/FeatureOne'
 import ScheduleThree from '@/components/sections/home3/ScheduleThree'
 import TeamOne from '@/components/sections/home3/TeamOne'
-import BuyTicket from '@/components/sections/home3/BuyTicket'
 import TicketOne from '@/components/sections/home3/TicketOne '
 import CTAOne from '@/components/sections/home3/CTAOne'
 
@@ -15,7 +14,6 @@ export default function Home() {
         <FeatureOne />
         <ScheduleThree />
         <TeamOne />
-        <BuyTicket />
         <TicketOne />
         <CTAOne />
       </Layout>

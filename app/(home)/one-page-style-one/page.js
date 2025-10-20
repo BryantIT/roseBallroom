@@ -3,7 +3,6 @@ import Banner from '@/components/sections/onepagehome1/Banner'
 import ServicesOne from '@/components/sections/onepagehome1/ServicesOne'
 import EventOne from '@/components/sections/onepagehome1/EventOne'
 import SlidingText from '@/components/sections/onepagehome1/SlidingText'
-import BuyTicket from '@/components/sections/onepagehome1/BuyTicket'
 import TeamOne from '@/components/sections/onepagehome1/TeamOne'
 import EventDirection from '@/components/sections/onepagehome1/EventDirection'
 import GalleryOne from '@/components/sections/onepagehome1/GalleryOne'
@@ -17,7 +16,6 @@ export default function Home() {
         <ServicesOne />
         <SlidingText />
         <EventOne />
-        <BuyTicket />
         <TeamOne />
         <EventDirection />
         <GalleryOne />
