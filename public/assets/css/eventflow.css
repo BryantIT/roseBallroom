@@ -235,11 +235,16 @@ ul {
   font-weight: 500;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+
+  /* Fallback solid color (in case gradient text isn't supported) */
+  color: #b20d5d;
+
+  /* Gradient text */
   background: linear-gradient(90deg, #b20d5d 0%, #4a0ab4 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  background-clip: text; /* Modern browsers */
+  -webkit-background-clip: text; /* Safari/iOS */
+  color: transparent; /* Make the text reveal the background */
+  -webkit-text-fill-color: transparent; /* Safari/iOS needs this */
 }
 
 .section-title__title {
@@ -260,21 +265,17 @@ ul {
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
-  -webkit-appearance: none;
   appearance: none;
-  outline: none !important;
+  -webkit-appearance: none; /* keep if you still see iOS quirks */
   font-weight: 700;
   font-size: 15px;
   color: var(--eventflow-white);
   text-transform: capitalize;
   letter-spacing: 1.6px;
-  padding: 17px 30px 17px;
+  padding: 17px 30px;
   background: linear-gradient(90deg, #b20d5d 0%, #4a0ab4 100%);
   border-radius: 30px;
-  moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; /* this is enough */
   overflow: hidden;
   gap: 10px;
   z-index: 1;
@@ -1644,7 +1645,7 @@ ul {
   transition-delay: 2000ms;
 }
 
-.main-slider__shpae-1 {
+.main-slider__shape-1 {
   position: absolute;
   top: 180px;
   right: 195px;
@@ -1663,22 +1664,18 @@ ul {
   z-index: -1;
 }
 
-.main-slider .swiper-slide-active .main-slider__shpae-1 {
+.main-slider .swiper-slide-active .main-slider__shape-1 {
   opacity: 1;
-  -webkit-transform: perspective(400px) rotateY(0deg) translateX(0px);
-  -ms-transform: perspective(400px) rotateY(0deg) translateX(0px);
-  transform: perspective(400px) rotateY(0deg) translateX(0px);
-  -webkit-transition-delay: 2000ms;
-  -moz-transition-delay: 2000ms;
-  -ms-transition-delay: 2000ms;
-  -o-transition-delay: 2000ms;
+  transform: perspective(400px) rotateY(0deg) translateX(0);
+  transition: transform 0.6s ease, opacity 0.6s ease; /* example */
+  transition-delay: 2s;
 }
 
-.main-slider__shpae-1 img {
+.main-slider__shape-1 img {
   width: auto;
 }
 
-.main-slider__shpae-2 {
+.main-slider__shape-2 {
   position: absolute;
   bottom: -50px;
   right: 270px;
@@ -1697,18 +1694,19 @@ ul {
   z-index: -1;
 }
 
-.main-slider .swiper-slide-active .main-slider__shpae-2 {
-  opacity: 1;
-  -webkit-transform: perspective(400px) rotateY(0deg) translateY(0px);
-  -ms-transform: perspective(400px) rotateY(0deg) translateY(0px);
-  transform: perspective(400px) rotateY(0deg) translateY(0px);
-  -webkit-transition-delay: 2000ms;
-  -moz-transition-delay: 2000ms;
-  -ms-transition-delay: 2000ms;
-  -o-transition-delay: 2000ms;
+.main-slider .main-slider__shape-2 {
+  opacity: 0;
+  transform: perspective(400px) rotateY(8deg) translateY(20px);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  transition-delay: 2s;
 }
 
-.main-slider__shpae-2 img {
+.main-slider .swiper-slide-active .main-slider__shape-2 {
+  opacity: 1;
+  transform: perspective(400px) rotateY(0) translateY(0);
+}
+
+.main-slider__shape-2 img {
   width: auto;
   opacity: 0.1;
 }
@@ -11867,7 +11865,7 @@ ul {
     right: 80px;
   }
 
-  .main-slider__shpae-1 {
+  .main-slider__shape-1 {
     right: 40px;
   }
 }
@@ -11877,7 +11875,7 @@ ul {
     display: none;
   }
 
-  .main-slider__shpae-1 {
+  .main-slider__shape-1 {
     display: none;
   }
 
@@ -11895,11 +11893,11 @@ ul {
     display: none;
   }
 
-  .main-slider__shpae-1 {
+  .main-slider__shape-1 {
     display: none;
   }
 
-  .main-slider__shpae-2 {
+  .main-slider__shape-2 {
     display: none;
   }
 
@@ -11922,11 +11920,11 @@ ul {
     display: none;
   }
 
-  .main-slider__shpae-1 {
+  .main-slider__shape-1 {
     display: none;
   }
 
-  .main-slider__shpae-2 {
+  .main-slider__shape-2 {
     display: none;
   }
 
@@ -12002,7 +12000,7 @@ ul {
     right: 150px;
   }
 
-  .main-slider__shpae-1 {
+  .main-slider__shape-1 {
     right: 70px;
   }
 }
@@ -12012,7 +12010,7 @@ ul {
     right: 100px;
   }
 
-  .main-slider__shpae-1 {
+  .main-slider__shape-1 {
     right: 50px;
   }
 }
