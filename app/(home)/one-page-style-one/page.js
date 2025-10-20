@@ -8,7 +8,6 @@ import TeamOne from '@/components/sections/onepagehome1/TeamOne'
 import EventDirection from '@/components/sections/onepagehome1/EventDirection'
 import GalleryOne from '@/components/sections/onepagehome1/GalleryOne'
 import ScheduleOne from '@/components/sections/onepagehome1/ScheduleOne'
-import Brand from '@/components/sections/onepagehome1/Brand'
 import CTAOne from '@/components/sections/onepagehome1/CTAOne'
 export default function Home() {
   return (
@@ -23,7 +22,6 @@ export default function Home() {
         <EventDirection />
         <GalleryOne />
         <ScheduleOne />
-        <Brand />
         <CTAOne />
       </Layout>
     </>

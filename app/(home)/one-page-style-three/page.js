@@ -5,7 +5,6 @@ import ScheduleThree from '@/components/sections/onepagehome3/ScheduleThree'
 import TeamOne from '@/components/sections/onepagehome3/TeamOne'
 import BuyTicket from '@/components/sections/onepagehome3/BuyTicket'
 import TicketOne from '@/components/sections/onepagehome3/TicketOne '
-import Brand from '@/components/sections/onepagehome3/Brand'
 import CTAOne from '@/components/sections/onepagehome3/CTAOne'
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
         <TeamOne />
         <BuyTicket />
         <TicketOne />
-        <Brand />
         <CTAOne />
       </Layout>
     </>

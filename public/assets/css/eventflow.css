@@ -3567,56 +3567,6 @@ ul {
 }
 
 /*--------------------------------------------------------------
-# Brand One
---------------------------------------------------------------*/
-.brand-one {
-  position: relative;
-  display: block;
-  padding: 90px 0 90px;
-  border-top: 2px dashed rgba(255, 255, 255, 0.1);
-  border-bottom: 2px dashed rgba(255, 255, 255, 0.1);
-  z-index: 1;
-}
-
-.brand-one__inner {
-  position: relative;
-  display: block;
-}
-
-.brand-one .swiper-slide {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.brand-one .swiper-slide__img {
-  position: relative;
-  display: block;
-  opacity: 0.5;
-  max-width: 137px;
-  width: 100%;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
-
-.brand-one .swiper-slide:hover .swiper-slide__img {
-  opacity: 1;
-}
-
-.brand-one .swiper-slide__img img {
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  width: 100%;
-}
-
-/*--------------------------------------------------------------
 # Blog One
 --------------------------------------------------------------*/
 .blog-one {
@@ -4938,54 +4888,6 @@ ul {
   font-family: var(--eventflow-font-two);
   text-transform: capitalize;
   margin-top: 8px;
-}
-
-/*--------------------------------------------------------------
-# Brand Two
---------------------------------------------------------------*/
-.brand-two {
-  position: relative;
-  display: block;
-  padding: 90px 0 118px;
-  z-index: 1;
-}
-
-.brand-two__inner {
-  position: relative;
-  display: block;
-}
-
-.brand-two .swiper-slide {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.brand-two .swiper-slide__img {
-  position: relative;
-  display: block;
-  opacity: 0.5;
-  max-width: 137px;
-  width: 100%;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
-
-.brand-two .swiper-slide:hover .swiper-slide__img {
-  opacity: 1;
-}
-
-.brand-two .swiper-slide__img img {
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  width: 100%;
 }
 
 /*--------------------------------------------------------------
