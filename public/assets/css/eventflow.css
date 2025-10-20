@@ -693,6 +693,14 @@ ul {
   z-index: 1;
 }
 
+.main-menu__logo img {
+  max-width: 150px;
+  max-height: 60px; /* optional */
+  width: auto;
+  height: auto;
+  display: block;
+}
+
 .main-menu__main-menu-box {
   position: relative;
   display: block;
