@@ -3,7 +3,6 @@ import React, { useEffect, useRef } from 'react'
 import Link from 'next/link'
 import CountUp from 'react-countup'
 import Layout from '@/components/layout/Layout'
-import EventOne from '@/components/common/EventOne'
 // Example usage of the component with dynamic content
 const points = [
   {
@@ -25,14 +24,6 @@ export default function Home() {
     <>
       <Layout headerStyle={4} footerStyle={1} breadcrumbTitle='About US'>
         <div>
-          <EventOne
-            tagline='About Our Event'
-            title='Uniting Creating of the Memories'
-            buttonText='Join The Event'
-            points={points}
-            imageUrl='/assets/images/resources/event-one-img-1.jpg'
-          />
-
           {/* Sliding Text Start */}
           <section className='sliding-text-one'>
             <div className='sliding-text-one__wrap'>

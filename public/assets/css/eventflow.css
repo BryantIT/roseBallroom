@@ -2751,129 +2751,6 @@ ul {
 }
 
 /*--------------------------------------------------------------
-# Event One
---------------------------------------------------------------*/
-.event-one {
-  position: relative;
-  display: block;
-  padding: 0 0 120px;
-}
-
-.event-one__inner {
-  position: relative;
-  display: block;
-  border: 2px solid rgba(var(--rose-gold-rgb), 0.2);
-  border-radius: 20px;
-  padding: 60px 60px 60px;
-  z-index: 1;
-}
-
-.event-one__top {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.event-one__top .section-title {
-  margin-bottom: 0;
-}
-
-.event-one__btn-box {
-  position: relative;
-  display: block;
-}
-
-.event-one__points {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  margin-bottom: 60px;
-}
-
-.event-one__points li {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  max-width: 460px;
-  width: 100%;
-}
-
-.event-one__points li .icon {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 80px;
-  width: 100%;
-  height: 80px;
-  border-radius: 50%;
-  /* solid fallback */
-  background-color: var(--rose-primary);
-
-  /* brand gradient */
-  background-image: linear-gradient(
-    90deg,
-    var(--rose-primary) 0%,
-    var(--rose-accent) 100%
-  );
-}
-
-.event-one__points li .icon span {
-  position: relative;
-  display: inline-block;
-  font-size: 45px;
-  color: var(--rose-white);
-  transition: all 500ms linear;
-  transition-delay: 0.1s;
-  transform: scale(1);
-}
-
-.event-one__points li:hover .icon span {
-  transform: scale(0.9);
-}
-
-.event-one__points li .content {
-  position: relative;
-  display: block;
-}
-
-.event-one__points li .content h4 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 14px;
-}
-
-.event-one__points li .content h4 a {
-  color: var(--rose-white);
-}
-
-.event-one__points li .content p {
-  font-size: 12px;
-  line-height: 20px;
-}
-
-.event-one__points li .content h4 a:hover {
-  color: var(--rose-primary);
-}
-
-.event-one__img-box {
-  position: relative;
-  display: block;
-}
-
-.event-one__img-box img {
-  width: 100%;
-  border-radius: 20px;
-}
-
-/*--------------------------------------------------------------
 # Buy Ticket
 --------------------------------------------------------------*/
 .buy-ticket {
@@ -10035,15 +9912,6 @@ ul {
     line-height: 30px;
   }
 
-  .event-one__points {
-    flex-direction: column;
-    align-items: baseline;
-  }
-
-  .event-one__points li + li {
-    margin-top: 30px;
-  }
-
   .buy-ticket__left {
     max-width: 600px;
     margin: 0 auto 60px;
@@ -10246,24 +10114,6 @@ ul {
 
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .event-one__top {
-    flex-direction: column;
-    align-items: baseline;
-  }
-
-  .event-one__btn-box {
-    margin-top: 30px;
-  }
-
-  .event-one__points {
-    flex-direction: column;
-    align-items: baseline;
-  }
-
-  .event-one__points li + li {
-    margin-top: 30px;
-  }
-
   .buy-ticket__left {
     max-width: 600px;
     margin: 0 auto 60px;
@@ -10632,42 +10482,6 @@ ul {
   .services-one__title {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .event-one__top {
-    flex-direction: column;
-    align-items: baseline;
-  }
-
-  .event-one__btn-box {
-    margin-top: 30px;
-  }
-
-  .event-one__points {
-    flex-direction: column;
-    align-items: baseline;
-  }
-
-  .event-one__points li {
-    flex-direction: column;
-    align-items: baseline;
-  }
-
-  .event-one__points li + li {
-    margin-top: 30px;
-  }
-
-  .event-one__points li .content h4 {
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  .event-one__points li .content p br {
-    display: none;
-  }
-
-  .event-one__inner {
-    padding: 60px 15px 60px;
   }
 
   .buy-ticket__left {

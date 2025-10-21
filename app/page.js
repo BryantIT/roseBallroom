@@ -1,7 +1,6 @@
 import Layout from '@/components/layout/Layout'
 import Banner from '@/components/sections/home1/Banner'
 import ServicesOne from '@/components/sections/home1/ServicesOne'
-import EventOne from '@/components/sections/home1/EventOne'
 import SlidingText from '@/components/sections/home1/SlidingText'
 import TeamOne from '@/components/sections/home1/TeamOne'
 import EventDirection from '@/components/sections/home1/EventDirection'
@@ -15,7 +14,6 @@ export default function Home() {
         <Banner />
         <ServicesOne />
         <SlidingText />
-        <EventOne />
         <TeamOne />
         <EventDirection />
         <GalleryOne />
