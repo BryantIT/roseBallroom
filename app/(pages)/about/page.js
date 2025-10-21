@@ -168,15 +168,15 @@ export default function Home() {
             </div>
           </section>
 
-          <section className='event-direction event-direction-two'>
+          <section className='dance-numbers dance-numbers-two'>
             <div className='container'>
-              <div className='event-direction__inner'>
+              <div className='dance-numbers__inner'>
                 <div className='row'>
                   <div
                     className='col-xl-7 wow fadeInLeft'
                     data-wow-delay='100ms'
                   >
-                    <div className='event-direction__left'>
+                    <div className='dance-numbers__left'>
                       <div className='section-title text-left'>
                         <div className='section-title__tagline-box'>
                           <span className='section-title__tagline'>
@@ -187,19 +187,19 @@ export default function Home() {
                           Creating Memories <br /> One Event Time
                         </h2>
                       </div>
-                      <p className='event-direction__text'>
+                      <p className='dance-numbers__text'>
                         Events bring people together for a shared experien
                         celebration a <br />
                         From weddings and birthdays to conferences
                       </p>
-                      <div className='event-direction__call'>
-                        <div className='event-direction__call-icon'>
+                      <div className='dance-numbers__call'>
+                        <div className='dance-numbers__call-icon'>
                           <img
-                            src='/assets/images/icon/event-direction-chat-icon.png'
+                            src='/assets/images/icon/dance-numbers-chat-icon.png'
                             alt=''
                           />
                         </div>
-                        <div className='event-direction__call-content'>
+                        <div className='dance-numbers__call-content'>
                           <p>Call Us</p>
                           <h4>
                             <a href='tel:3075550133'>(307) 555-0133</a>
@@ -212,64 +212,64 @@ export default function Home() {
                     className='col-xl-5 wow fadeInRight'
                     data-wow-delay='300ms'
                   >
-                    <div className='event-direction__right'>
-                      <ul className='event-direction__counter list-unstyled'>
+                    <div className='dance-numbers__right'>
+                      <ul className='dance-numbers__counter list-unstyled'>
                         <li>
-                          <div className='event-direction__counter-single'>
-                            <div className='event-direction__counter-box'>
+                          <div className='dance-numbers__counter-single'>
+                            <div className='dance-numbers__counter-box'>
                               <h3 className='odometer'>
                                 <CountUp start={0} end={100} duration={2} />
                               </h3>
-                              <span className='event-direction__counter-plus'>
+                              <span className='dance-numbers__counter-plus'>
                                 +
                               </span>
                             </div>
-                            <p className='event-direction__counter-text'>
+                            <p className='dance-numbers__counter-text'>
                               Our Event Artists
                             </p>
                           </div>
                         </li>
                         <li>
-                          <div className='event-direction__counter-single'>
-                            <div className='event-direction__counter-box'>
+                          <div className='dance-numbers__counter-single'>
+                            <div className='dance-numbers__counter-box'>
                               <h3 className='odometer'>
                                 <CountUp start={0} end={101} duration={2} />
                               </h3>
-                              <span className='event-direction__counter-plus'>
+                              <span className='dance-numbers__counter-plus'>
                                 +
                               </span>
                             </div>
-                            <p className='event-direction__counter-text'>
+                            <p className='dance-numbers__counter-text'>
                               Hours Of Music
                             </p>
                           </div>
                         </li>
                         <li>
-                          <div className='event-direction__counter-single'>
-                            <div className='event-direction__counter-box'>
+                          <div className='dance-numbers__counter-single'>
+                            <div className='dance-numbers__counter-box'>
                               <h3 className='odometer'>
                                 <CountUp start={0} end={10} duration={2} />
                               </h3>
-                              <span className='event-direction__counter-plus'>
+                              <span className='dance-numbers__counter-plus'>
                                 +
                               </span>
                             </div>
-                            <p className='event-direction__counter-text'>
+                            <p className='dance-numbers__counter-text'>
                               Event Stages
                             </p>
                           </div>
                         </li>
                         <li>
-                          <div className='event-direction__counter-single'>
-                            <div className='event-direction__counter-box'>
+                          <div className='dance-numbers__counter-single'>
+                            <div className='dance-numbers__counter-box'>
                               <h3 className='odometer'>
                                 <CountUp start={0} end={20} duration={2} />
                               </h3>
-                              <span className='event-direction__counter-plus'>
+                              <span className='dance-numbers__counter-plus'>
                                 +
                               </span>
                             </div>
-                            <p className='event-direction__counter-text'>
+                            <p className='dance-numbers__counter-text'>
                               Music Brands
                             </p>
                           </div>

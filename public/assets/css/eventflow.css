@@ -2989,13 +2989,13 @@ ul {
 /*--------------------------------------------------------------
 # Event Direction
 --------------------------------------------------------------*/
-.event-direction {
+.dance-numbers {
   position: relative;
   display: block;
   z-index: 1;
 }
 
-.event-direction__inner {
+.dance-numbers__inner {
   position: relative;
   display: block;
   background-color: var(--rose-black);
@@ -3003,16 +3003,16 @@ ul {
   border-radius: 20px;
 }
 
-.event-direction__left {
+.dance-numbers__left {
   position: relative;
   display: block;
 }
 
-.event-direction__left .section-title {
+.dance-numbers__left .section-title {
   margin-bottom: 4px;
 }
 
-.event-direction__call {
+.dance-numbers__call {
   position: relative;
   display: flex;
   align-items: center;
@@ -3020,48 +3020,48 @@ ul {
   margin-top: 30px;
 }
 
-.event-direction__call-icon {
+.dance-numbers__call-icon {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.event-direction__call-icon img {
+.dance-numbers__call-icon img {
   width: auto;
 }
 
-.event-direction__call-content {
+.dance-numbers__call-content {
   position: relative;
   display: block;
 }
 
-.event-direction__call-content p {
+.dance-numbers__call-content p {
   color: var(--rose-white);
   margin-bottom: 9px;
 }
 
-.event-direction__call-content h4 {
+.dance-numbers__call-content h4 {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
   line-height: 16px;
 }
 
-.event-direction__call-content h4 a {
+.dance-numbers__call-content h4 a {
   color: var(--rose-white);
 }
 
-.event-direction__call-content h4 a:hover {
+.dance-numbers__call-content h4 a:hover {
   color: var(--rose-primary);
 }
 
-.event-direction__right {
+.dance-numbers__right {
   position: relative;
   display: block;
   margin-left: 8px;
 }
 
-.event-direction__counter {
+.dance-numbers__counter {
   position: relative;
   display: flex;
   align-items: center;
@@ -3070,7 +3070,7 @@ ul {
   margin-right: -20px;
 }
 
-.event-direction__counter li {
+.dance-numbers__counter li {
   position: relative;
   flex: 0 0 50%;
   max-width: 50%;
@@ -3079,7 +3079,7 @@ ul {
   padding-right: 15px;
 }
 
-.event-direction__counter-single {
+.dance-numbers__counter-single {
   position: relative;
   display: block;
   border: 1px solid rgba(var(--rose-gold-rgb), 0.2);
@@ -3089,7 +3089,7 @@ ul {
   padding: 21px 0 26px;
 }
 
-.event-direction__counter-box {
+.dance-numbers__counter-box {
   position: relative;
   display: flex;
   align-items: center;
@@ -3097,21 +3097,21 @@ ul {
   margin-bottom: 12px;
 }
 
-.event-direction__counter-box h3 {
+.dance-numbers__counter-box h3 {
   font-size: 48px;
   line-height: 48px !important;
   font-weight: 700;
   font-family: var(--eventflow-font-two) !important;
 }
 
-.event-direction__counter-plus {
+.dance-numbers__counter-plus {
   font-size: 48px;
   line-height: 48px !important;
   font-weight: 700;
   font-family: var(--eventflow-font-two) !important;
 }
 
-.event-direction__counter-text {
+.dance-numbers__counter-text {
   color: rgba(var(--rose-white-rgb), 0.8);
   line-height: 16px;
 }
@@ -9662,7 +9662,7 @@ ul {
 /*--------------------------------------------------------------
 # Event Direction Two
 --------------------------------------------------------------*/
-.event-direction-two {
+.dance-numbers-two {
   padding: 0 0 120px;
 }
 
@@ -9926,7 +9926,7 @@ ul {
     margin: 0 auto 0;
   }
 
-  .event-direction__right {
+  .dance-numbers__right {
     margin-left: 0;
     margin-top: 60px;
   }
@@ -10128,7 +10128,7 @@ ul {
     margin: 0 auto 0;
   }
 
-  .event-direction__right {
+  .dance-numbers__right {
     margin-left: 0;
     margin-top: 60px;
   }
@@ -10527,36 +10527,36 @@ ul {
     padding: 24px 20px 23px;
   }
 
-  .event-direction__inner {
+  .dance-numbers__inner {
     padding: 40px 10px 10px;
   }
 
-  .event-direction__right {
+  .dance-numbers__right {
     margin-left: 0;
     margin-top: 60px;
   }
 
-  .event-direction__counter {
+  .dance-numbers__counter {
     margin-left: -10px;
     margin-right: -10px;
   }
 
-  .event-direction__counter li {
+  .dance-numbers__counter li {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  .event-direction__counter-box h3 {
+  .dance-numbers__counter-box h3 {
     font-size: 30px;
     line-height: 30px !important;
   }
 
-  .event-direction__counter-plus {
+  .dance-numbers__counter-plus {
     font-size: 30px;
     line-height: 30px !important;
   }
 
-  .event-direction__counter-text {
+  .dance-numbers__counter-text {
     font-size: 15px;
   }
 
