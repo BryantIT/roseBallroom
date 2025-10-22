@@ -4,7 +4,7 @@ import FeatureOne from '@/components/sections/home3/FeatureOne'
 import ScheduleThree from '@/components/sections/home3/ScheduleThree'
 import TeamOne from '@/components/sections/home3/TeamOne'
 import TicketOne from '@/components/sections/home3/TicketOne '
-import CTAOne from '@/components/sections/home3/CTAOne'
+import CTA from '@/components/sections/home3/CTA'
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         <ScheduleThree />
         <TeamOne />
         <TicketOne />
-        <CTAOne />
+        <CTA />
       </Layout>
     </>
   )

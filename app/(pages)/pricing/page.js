@@ -1,160 +1,160 @@
-"use client";
-import { useState } from "react";
-import Layout from "@/components/layout/Layout";
+'use client'
+import { useState } from 'react'
+import Layout from '@/components/layout/Layout'
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("monthly");
+  const [activeTab, setActiveTab] = useState('monthly')
 
   const pricingPlans = {
     monthly: [
       {
         price: 19,
-        planName: "Basic Plan",
+        planName: 'Basic Plan',
         features: [
-          "Mistakes To Avoid",
-          "Your Startup",
-          "Knew About Fonts",
-          "Winning Metric for Your Startup",
+          'Mistakes To Avoid',
+          'Your Startup',
+          'Knew About Fonts',
+          'Winning Metric for Your Startup',
         ],
       },
       {
         price: 29,
-        planName: "Hard Plan",
+        planName: 'Hard Plan',
         features: [
-          "Mistakes To Avoid",
-          "Your Startup",
-          "Knew About Fonts",
-          "Winning Metric for Your Startup",
+          'Mistakes To Avoid',
+          'Your Startup',
+          'Knew About Fonts',
+          'Winning Metric for Your Startup',
         ],
       },
       {
         price: 20,
-        planName: "Easy Plan",
+        planName: 'Easy Plan',
         features: [
-          "Mistakes To Avoid",
-          "Your Startup",
-          "Knew About Fonts",
-          "Winning Metric for Your Startup",
+          'Mistakes To Avoid',
+          'Your Startup',
+          'Knew About Fonts',
+          'Winning Metric for Your Startup',
         ],
       },
     ],
     yearly: [
       {
         price: 30,
-        planName: "Basic Plan",
+        planName: 'Basic Plan',
         features: [
-          "Mistakes To Avoid",
-          "Your Startup",
-          "Knew About Fonts",
-          "Winning Metric for Your Startup",
+          'Mistakes To Avoid',
+          'Your Startup',
+          'Knew About Fonts',
+          'Winning Metric for Your Startup',
         ],
       },
       {
         price: 80,
-        planName: "Hard Plan",
+        planName: 'Hard Plan',
         features: [
-          "Mistakes To Avoid",
-          "Your Startup",
-          "Knew About Fonts",
-          "Winning Metric for Your Startup",
+          'Mistakes To Avoid',
+          'Your Startup',
+          'Knew About Fonts',
+          'Winning Metric for Your Startup',
         ],
       },
       {
         price: 50,
-        planName: "Easy Plan",
+        planName: 'Easy Plan',
         features: [
-          "Mistakes To Avoid",
-          "Your Startup",
-          "Knew About Fonts",
-          "Winning Metric for Your Startup",
+          'Mistakes To Avoid',
+          'Your Startup',
+          'Knew About Fonts',
+          'Winning Metric for Your Startup',
         ],
       },
     ],
-  };
+  }
   const tickets = [
     {
       id: 1,
-      title: "Day Pass",
-      price: "$35.99",
+      title: 'Day Pass',
+      price: '$35.99',
       features: [
-        "Conference Tickets",
-        "Free Lunch And Coffee",
-        "Certificate",
-        "Easy Access",
-        "Free Contacts",
+        'Conference Tickets',
+        'Free Lunch And Coffee',
+        'Certificate',
+        'Easy Access',
+        'Free Contacts',
       ],
     },
     {
       id: 2,
-      title: "Full Pass",
-      price: "$99.99",
+      title: 'Full Pass',
+      price: '$99.99',
       features: [
-        "Conference Tickets",
-        "Free Lunch And Coffee",
-        "Certificate",
-        "Easy Access",
-        "Free Contacts",
+        'Conference Tickets',
+        'Free Lunch And Coffee',
+        'Certificate',
+        'Easy Access',
+        'Free Contacts',
       ],
     },
     {
       id: 3,
-      title: "Group Pass",
-      price: "$119.99",
+      title: 'Group Pass',
+      price: '$119.99',
       features: [
-        "Conference Tickets",
-        "Free Lunch And Coffee",
-        "Certificate",
-        "Easy Access",
-        "Free Contacts",
+        'Conference Tickets',
+        'Free Lunch And Coffee',
+        'Certificate',
+        'Easy Access',
+        'Free Contacts',
       ],
     },
-  ];
+  ]
 
   return (
     <>
-      <Layout headerStyle={4} footerStyle={1} breadcrumbTitle="Pricing">
+      <Layout headerStyle={4} footerStyle={1} breadcrumbTitle='Pricing'>
         <div>
-          <section className="ticket-one ticket-two">
-            <div className="container">
-              <div className="section-title text-center">
-                <div className="section-title__tagline-box">
-                  <span className="section-title__tagline">GET TICKET</span>
+          <section className='ticket-one ticket-two'>
+            <div className='container'>
+              <div className='section-title text-center'>
+                <div className='section-title__tagline-box'>
+                  <span className='section-title__tagline'>GET TICKET</span>
                 </div>
-                <h2 className="section-title__title">Choose a Ticket</h2>
+                <h2 className='section-title__title'>Choose a Ticket</h2>
               </div>
-              <div className="row">
+              <div className='row'>
                 {tickets.map((ticket, index) => (
                   <div
                     key={ticket.id}
                     className={`col-xl-4 col-lg-4 wow fadeIn${
-                      index % 2 === 0 ? "Left" : "Right"
+                      index % 2 === 0 ? 'Left' : 'Right'
                     }`}
                     data-wow-delay={`${index * 100}ms`}
                   >
-                    <div className="ticket-one__single">
-                      <div className="ticket-one__title-box">
-                        <div className="ticket-one__title-icon">
-                          <i className="fas fa-ticket-alt"></i>
+                    <div className='ticket-one__single'>
+                      <div className='ticket-one__title-box'>
+                        <div className='ticket-one__title-icon'>
+                          <i className='fas fa-ticket-alt'></i>
                         </div>
-                        <h5 className="ticket-one__title">{ticket.title}</h5>
+                        <h5 className='ticket-one__title'>{ticket.title}</h5>
                       </div>
-                      <div className="ticket-one__price-box">
+                      <div className='ticket-one__price-box'>
                         <h3>{ticket.price}</h3>
                       </div>
-                      <ul className="list-unstyled ticket-one__points">
+                      <ul className='list-unstyled ticket-one__points'>
                         {ticket.features.map((feature, idx) => (
                           <li key={idx}>
-                            <div className="icon">
-                              <i className="fas fa-check"></i>
+                            <div className='icon'>
+                              <i className='fas fa-check'></i>
                             </div>
-                            <div className="text">
+                            <div className='text'>
                               <p>{feature}</p>
                             </div>
                           </li>
                         ))}
                       </ul>
-                      <div className="ticket-one__btn-box">
-                        <a href="/pricing" className="ticket-one__btn thm-btn">
-                          Buy Ticket<span className="icon-arrow-right"></span>
+                      <div className='ticket-one__btn-box'>
+                        <a href='/pricing' className='ticket-one__btn thm-btn'>
+                          Buy Ticket<span className='icon-arrow-right'></span>
                         </a>
                       </div>
                     </div>
@@ -165,88 +165,88 @@ export default function Home() {
           </section>
 
           {/*Pricing One Start*/}
-          <section className="pricing-one pricing-two">
-            <div className="container">
-              <div className="pricing-one__inner">
-                <div className="section-title text-left">
-                  <div className="section-title__tagline-box">
-                    <span className="section-title__tagline">Pricing</span>
+          <section className='pricing-one pricing-two'>
+            <div className='container'>
+              <div className='pricing-one__inner'>
+                <div className='section-title text-left'>
+                  <div className='section-title__tagline-box'>
+                    <span className='section-title__tagline'>Pricing</span>
                   </div>
-                  <h2 className="section-title__title section-title__title--two">
+                  <h2 className='section-title__title section-title__title--two'>
                     Building Relationships <br /> Driving Results
                   </h2>
                 </div>
-                <div className="pricing-one__main-tab-box tabs-box">
-                  <ul className="tab-buttons list-unstyled">
+                <div className='pricing-one__main-tab-box tabs-box'>
+                  <ul className='tab-buttons list-unstyled'>
                     <li
-                      onClick={() => setActiveTab("monthly")}
+                      onClick={() => setActiveTab('monthly')}
                       className={`tab-btn ${
-                        activeTab === "monthly" ? "active-btn" : ""
+                        activeTab === 'monthly' ? 'active-btn' : ''
                       }`}
                     >
                       <span>Monthly</span>
                     </li>
                     <li
-                      onClick={() => setActiveTab("yearly")}
+                      onClick={() => setActiveTab('yearly')}
                       className={`tab-btn ${
-                        activeTab === "yearly" ? "active-btn" : ""
+                        activeTab === 'yearly' ? 'active-btn' : ''
                       }`}
                     >
                       <span>Yearly</span>
                     </li>
                   </ul>
-                  <div className="tabs-content">
+                  <div className='tabs-content'>
                     {Object.entries(pricingPlans).map(([key, plans]) => (
                       <div
                         key={key}
                         className={`tab ${
-                          activeTab === key ? "active-tab" : ""
+                          activeTab === key ? 'active-tab' : ''
                         }`}
                         id={key}
                       >
-                        <div className="pricing-one__tab-content-box">
-                          <div className="row">
+                        <div className='pricing-one__tab-content-box'>
+                          <div className='row'>
                             {plans.map((plan, index) => (
                               <div
                                 key={index}
-                                className="col-xl-4 col-lg-4 col-md-6"
+                                className='col-xl-4 col-lg-4 col-md-6'
                               >
-                                <div className="pricing-one__single">
-                                  <div className="pricing-one__single-inner">
-                                    <div className="pricing-one__price-box">
+                                <div className='pricing-one__single'>
+                                  <div className='pricing-one__single-inner'>
+                                    <div className='pricing-one__price-box'>
                                       <div
-                                        className="pricing-one__shape-1"
+                                        className='pricing-one__shape-1'
                                         style={{
                                           backgroundImage:
-                                            "url(/assets/images/shapes/pricing-one-shape-1.png)",
+                                            'url(/assets/images/shapes/pricing-one-shape-1.png)',
                                         }}
                                       ></div>
-                                      <h3 className="pricing-one__price">
+                                      <h3 className='pricing-one__price'>
                                         ${plan.price} <span>/mo</span>
                                       </h3>
-                                      <p className="pricing-one__pack-name">
+                                      <p className='pricing-one__pack-name'>
                                         {plan.planName}
                                       </p>
                                     </div>
-                                    <ul className="list-unstyled pricing-one__points">
+                                    <ul className='list-unstyled pricing-one__points'>
                                       {plan.features.map((feature, index) => (
                                         <li key={index}>
-                                          <div className="icon">
-                                            <span className="icon-double-angle"></span>
+                                          <div className='icon'>
+                                            <span className='icon-double-angle'></span>
                                           </div>
-                                          <div className="text">
+                                          <div className='text'>
                                             <p>{feature}</p>
                                           </div>
                                         </li>
                                       ))}
                                     </ul>
-                                    <div className="pricing-one__btn-box">
+                                    <div className='pricing-one__btn-box'>
                                       <a
-                                        href="/pricing"
-                                        className="pricing-one__btn thm-btn"
+                                        href='/pricing'
+                                        className='pricing-one__btn thm-btn'
                                       >
                                         Purchase now
-                                        <span className="icon-arrow-right"></span>
+                                        <span className='icon-arrow-right'></span>
                                       </a>
                                     </div>
                                   </div>
@@ -265,25 +265,25 @@ export default function Home() {
           {/*Pricing One End*/}
 
           {/*CTA One Start*/}
-          <section className="cta-one">
-            <div className="container">
-              <div className="cta-one__inner">
-                <h3 className="cta-one__title">
+          <section className='cta'>
+            <div className='container'>
+              <div className='cta__inner'>
+                <h3 className='cta__title'>
                   Get Latest Updates Subscribe <br /> to Our Newsletter
                 </h3>
                 <form
-                  className="cta-one__form mc-form"
-                  data-url="MC_FORM_URL"
+                  className='cta__form mc-form'
+                  data-url='MC_FORM_URL'
                   noValidate
                 >
-                  <div className="cta-one__form-input-box">
+                  <div className='cta__form-input-box'>
                     <input
-                      type="email"
-                      placeholder="Enter your email"
-                      name="EMAIL"
+                      type='email'
+                      placeholder='Enter your email'
+                      name='EMAIL'
                     />
-                    <button type="submit" className="cta-one__btn">
-                      <span className="icon-paper-plan"></span>
+                    <button type='submit' className='cta__btn'>
+                      <span className='icon-paper-plan'></span>
                     </button>
                   </div>
                 </form>
@@ -294,5 +294,5 @@ export default function Home() {
         </div>
       </Layout>
     </>
-  );
+  )
 }
