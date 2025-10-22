@@ -5,7 +5,6 @@ import SlidingText from '@/components/sections/home1/SlidingText'
 import TeamOne from '@/components/sections/home1/TeamOne'
 import DanceNumbers from '@/components/sections/home1/DanceNumbers'
 import GalleryOne from '@/components/sections/home1/GalleryOne'
-import ScheduleOne from '@/components/sections/home1/ScheduleOne'
 import CTAOne from '@/components/sections/home1/CTAOne'
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
         <TeamOne />
         <DanceNumbers />
         <GalleryOne />
-        <ScheduleOne />
         <CTAOne />
       </Layout>
     </>
