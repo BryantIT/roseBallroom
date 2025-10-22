@@ -1,11 +1,11 @@
 import Layout from '@/components/layout/Layout'
-import Banner from '@/components/sections/home1/Banner'
-import Reasons from '@/components/sections/home1/Reasons'
-import SlidingText from '@/components/sections/home1/SlidingText'
-import TeamOne from '@/components/sections/home1/TeamOne'
-import DanceNumbers from '@/components/sections/home1/DanceNumbers'
-import GalleryOne from '@/components/sections/home1/GalleryOne'
-import CTA from '@/components/sections/home1/CTA'
+import Banner from '@/components/sections/home/Banner'
+import Reasons from '@/components/sections/home/Reasons'
+import SlidingText from '@/components/sections/home/SlidingText'
+import TeamOne from '@/components/sections/home/TeamOne'
+import DanceNumbers from '@/components/sections/home/DanceNumbers'
+import GalleryOne from '@/components/sections/home/GalleryOne'
+import CTA from '@/components/sections/home/CTA'
 export default function Home() {
   return (
     <>
