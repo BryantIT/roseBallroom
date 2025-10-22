@@ -2508,14 +2508,14 @@ ul {
 /*--------------------------------------------------------------
 # Services One
 --------------------------------------------------------------*/
-.services-one {
+.reasons {
   position: relative;
   display: block;
   padding: 96px 0 80px;
   z-index: 1;
 }
 
-.services-one__single {
+.reasons__single {
   position: relative;
   display: block;
   padding: 38px 39px 37px;
@@ -2524,7 +2524,7 @@ ul {
   z-index: 1;
 }
 
-.services-one__single:before {
+.reasons__single:before {
   content: '';
   position: absolute;
   top: 0px;
@@ -2548,12 +2548,12 @@ ul {
   z-index: -1;
 }
 
-.services-one__single:hover:before {
+.reasons__single:hover:before {
   visibility: hidden;
   opacity: 0;
 }
 
-.services-one__single:after {
+.reasons__single:after {
   content: '';
   position: absolute;
   top: 0px;
@@ -2577,64 +2577,65 @@ ul {
   z-index: -1;
 }
 
-.services-one__single:hover:after {
+.reasons__single:hover:after {
   visibility: visible;
   opacity: 1;
 }
 
-.services-one__icon {
+.reasons__icon {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 80px;
+  inline-size: 80px;
+  block-size: 80px;
   border-radius: 50%;
-  background-color: var(--rose-primary);
-
-  /* brand gradient */
   background-image: linear-gradient(
     90deg,
     var(--rose-primary) 0%,
     var(--rose-accent) 100%
   );
+
+  /* Let icons inherit color if the SVG uses currentColor */
+  color: var(--rose-white);
 }
 
-.services-one__icon span {
-  position: relative;
-  display: inline-block;
-  font-size: 30px;
-  color: var(--rose-white);
-  transition: all 500ms linear;
-  transition-delay: 0.1s;
+/* Size the icon inside the circle */
+.reasons__icon img {
+  inline-size: 60px; /* ~55% of the circle; tweak to taste */
+  block-size: 60px;
+  object-fit: contain; /* keeps aspect ratio */
+  display: block; /* removes inline gap */
+  transition: transform 500ms linear 0.1s;
   transform: scale(1);
 }
 
-.services-one__single:hover .services-one__icon span {
+/* Hover effect moved from span -> img */
+.reasons__single:hover .reasons__icon img {
   transform: scale(1.05);
 }
 
-.services-one__title {
+.reasons__title {
   font-size: 24px;
   font-weight: 700;
   line-height: 34px;
   margin-top: 22px;
 }
 
-.services-one__title a {
+.reasons__title a {
   color: var(--rose-white);
 }
 
-.services-one__title a:hover {
+.reasons__title a:hover {
   color: var(--rose-primary);
 }
 
-.services-one__text {
+.reasons__text {
   margin-top: 14px;
   margin-bottom: 30px;
 }
 
-.services-one__read-more {
+.reasons__read-more {
   position: relative;
   display: flex;
   align-items: center;
@@ -2644,7 +2645,7 @@ ul {
   font-weight: 700;
 }
 
-.services-one__read-more:hover {
+.reasons__read-more:hover {
   color: var(--rose-primary);
 }
 
@@ -9810,7 +9811,7 @@ ul {
 --------------------------------------------------------------*/
 
 @media only screen and (min-width: 1200px) and (max-width: 1319px) {
-  .services-one__single {
+  .reasons__single {
     padding: 38px 20px 37px;
   }
 
@@ -9908,11 +9909,11 @@ ul {
 
 /* Medium screen  */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .services-one__single {
+  .reasons__single {
     padding: 38px 20px 37px;
   }
 
-  .services-one__title {
+  .reasons__title {
     font-size: 20px;
     line-height: 30px;
   }
@@ -10480,11 +10481,11 @@ ul {
     display: none;
   }
 
-  .services-one__single {
+  .reasons__single {
     padding: 38px 20px 37px;
   }
 
-  .services-one__title {
+  .reasons__title {
     font-size: 20px;
     line-height: 30px;
   }

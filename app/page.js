@@ -1,6 +1,6 @@
 import Layout from '@/components/layout/Layout'
 import Banner from '@/components/sections/home1/Banner'
-import ServicesOne from '@/components/sections/home1/ServicesOne'
+import Reasons from '@/components/sections/home1/Reasons'
 import SlidingText from '@/components/sections/home1/SlidingText'
 import TeamOne from '@/components/sections/home1/TeamOne'
 import DanceNumbers from '@/components/sections/home1/DanceNumbers'
@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Layout headerStyle={1} footerStyle={1}>
         <Banner />
-        <ServicesOne />
+        <Reasons />
         <SlidingText />
         <TeamOne />
         <DanceNumbers />
