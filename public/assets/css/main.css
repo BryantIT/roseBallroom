@@ -17,7 +17,7 @@
 @import url('../vendors/animate/custom-animate.css');
 @import url('../vendors/bootstrap-select/css/bootstrap-select.min.css');
 @import url('../vendors/bootstrap/css/bootstrap.min.css');
-@import url('../vendors/eventflow-icons/style.css');
+@import url('../vendors/roseballroom-icons/style.css');
 @import url('../vendors/fontawesome/css/all.min.css');
 @import url('../vendors/jarallax/jarallax.css');
 @import url('../vendors/jquery-magnific-popup/jquery.magnific-popup.css');
@@ -69,7 +69,7 @@
 }
 
 body {
-  font-family: var(--eventflow-font);
+  font-family: var(--roseballroom-font);
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
@@ -130,7 +130,7 @@ h5,
 h6 {
   color: var(--rose-white);
   margin: 0;
-  font-family: var(--eventflow-font-two);
+  font-family: var(--roseballroom-font-two);
 }
 
 p {
@@ -208,7 +208,7 @@ ul {
 }
 
 .section-separator {
-  border-color: var(--eventflow-border);
+  border-color: var(--roseballroom-border);
   border-width: 1px;
   margin-top: 0;
   margin-bottom: 0;
@@ -1249,7 +1249,7 @@ ul {
   line-height: 30px;
   color: #ffffff;
   font-size: 14px;
-  font-family: var(--eventflow-font);
+  font-family: var(--roseballroom-font);
   font-weight: 500;
   height: 46px;
   -webkit-box-align: center;
@@ -1363,7 +1363,7 @@ ul {
 }
 
 .mobile-nav__top .main-menu__login a {
-  color: var(--eventflow-text-dark);
+  color: var(--roseballroom-text-dark);
 }
 
 .mobile-nav__container {
@@ -1402,7 +1402,7 @@ ul {
 }
 
 .mobile-nav__contact li {
-  color: var(--eventflow-text-dark);
+  color: var(--roseballroom-text-dark);
   font-size: 14px;
   font-weight: 500;
   position: relative;
@@ -2693,7 +2693,7 @@ ul {
   text-transform: capitalize;
   transition: all 200ms linear;
   transition-delay: 0.1s;
-  font-family: var(--eventflow-font-two);
+  font-family: var(--roseballroom-font-two);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -3107,14 +3107,14 @@ ul {
   font-size: 48px;
   line-height: 48px !important;
   font-weight: 700;
-  font-family: var(--eventflow-font-two) !important;
+  font-family: var(--roseballroom-font-two) !important;
 }
 
 .dance-numbers__counter-plus {
   font-size: 48px;
   line-height: 48px !important;
   font-weight: 700;
-  font-family: var(--eventflow-font-two) !important;
+  font-family: var(--roseballroom-font-two) !important;
 }
 
 .dance-numbers__counter-text {
@@ -4618,7 +4618,7 @@ ul {
   color: var(--rose-white);
   line-height: 30px !important;
   font-weight: 700;
-  font-family: var(--eventflow-font-two) !important;
+  font-family: var(--roseballroom-font-two) !important;
 }
 
 .event-two__trusted-customer-count-plus {
@@ -4626,7 +4626,7 @@ ul {
   color: var(--rose-white);
   line-height: 30px;
   font-weight: 700;
-  font-family: var(--eventflow-font-two);
+  font-family: var(--roseballroom-font-two);
 }
 
 .event-two__trusted-customer-text {
@@ -4767,7 +4767,7 @@ ul {
   color: var(--rose-black);
   font-weight: 700;
   letter-spacing: 1.4px;
-  font-family: var(--eventflow-font-two) !important;
+  font-family: var(--roseballroom-font-two) !important;
 }
 
 .event-two__points-count-plus {
@@ -4776,7 +4776,7 @@ ul {
   color: var(--rose-black);
   font-weight: 700;
   letter-spacing: 1.4px;
-  font-family: var(--eventflow-font-two);
+  font-family: var(--roseballroom-font-two);
 }
 
 .event-two__points-text {
@@ -4785,7 +4785,7 @@ ul {
   color: var(--rose-black);
   font-weight: 700;
   letter-spacing: 1.4px;
-  font-family: var(--eventflow-font-two);
+  font-family: var(--roseballroom-font-two);
 }
 
 .event-two__text {
@@ -4911,7 +4911,7 @@ ul {
   line-height: 48px;
   text-align: center;
   font-weight: 700;
-  font-family: var(--eventflow-font-two);
+  font-family: var(--roseballroom-font-two);
   margin: 0 auto;
 }
 
@@ -4924,7 +4924,7 @@ ul {
   font-weight: 700;
   letter-spacing: 1.4px;
   text-align: center;
-  font-family: var(--eventflow-font-two);
+  font-family: var(--roseballroom-font-two);
   text-transform: capitalize;
   margin-top: 8px;
 }
@@ -6178,7 +6178,7 @@ ul {
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  font-family: var(--eventflow-font);
+  font-family: var(--roseballroom-font);
   position: relative;
   display: inline-block;
   margin-left: -4px;
@@ -6189,7 +6189,7 @@ ul {
   font-weight: 700;
   line-height: 36px;
   color: var(--rose-white);
-  font-family: var(--eventflow-font-two);
+  font-family: var(--roseballroom-font-two);
 }
 
 .pricing-one__points {
@@ -6473,7 +6473,7 @@ ul {
   font-size: 60px;
   color: var(--rose-white);
   font-weight: 800;
-  font-family: var(--eventflow-font-two);
+  font-family: var(--roseballroom-font-two);
   text-transform: capitalize;
   line-height: 60px;
   padding: 25px 20px 25px;
@@ -7049,7 +7049,7 @@ ul {
   font-size: 24px;
   font-weight: 700;
   color: var(--rose-white);
-  font-family: var(--eventflow-font-two);
+  font-family: var(--roseballroom-font-two);
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
@@ -9094,7 +9094,7 @@ ul {
   line-height: 25px;
   letter-spacing: 1.4px;
   color: var(--rose-white);
-  font-family: var(--eventflow-font-two);
+  font-family: var(--roseballroom-font-two);
   counter-increment: count;
   content: '' counter(count);
   transition: all 200ms linear;
@@ -9531,7 +9531,7 @@ ul {
   color: transparent;
   font-size: 80px;
   line-height: 1.1em;
-  font-family: var(--eventflow-font-2);
+  font-family: var(--roseballroom-font-2);
   font-weight: 700;
   text-transform: uppercase;
   -webkit-background-clip: text;
@@ -9570,7 +9570,7 @@ ul {
   font-size: 55px;
   line-height: 60px;
   font-weight: 700;
-  font-family: var(--eventflow-font);
+  font-family: var(--roseballroom-font);
 }
 
 .coming-soon-page .timer-box .countdown-timer li span.timeRef {
@@ -9582,7 +9582,7 @@ ul {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 11px;
-  font-family: var(--eventflow-font);
+  font-family: var(--roseballroom-font);
 }
 
 .coming-soon-page__content .inner .text {
@@ -9631,7 +9631,7 @@ ul {
   padding-left: 30px;
   padding-right: 30px;
   transition: all 500ms ease 0s;
-  font-family: var(--eventflow-font);
+  font-family: var(--roseballroom-font);
   outline: none;
 }
 
@@ -9791,7 +9791,7 @@ ul {
   line-height: 25px;
   letter-spacing: 1.4px;
   color: var(--rose-white);
-  font-family: var(--eventflow-font-two);
+  font-family: var(--roseballroom-font-two);
   counter-increment: count;
   content: '' counter(count);
   transition: all 200ms linear;
