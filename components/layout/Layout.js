@@ -3,8 +3,7 @@ import { useEffect, useState } from 'react'
 import BackToTop from '../elements/BackToTop'
 import DataBg from '../elements/DataBg'
 import Breadcrumb from './Breadcrumb'
-import Footer1 from './footer/Footer1'
-import Footer2 from './footer/Footer2'
+import Footer from './footer/Footer'
 import Header from './header/Header'
 
 export default function Layout({
@@ -76,9 +75,8 @@ export default function Layout({
 
         {children}
 
-        {!footerStyle && <Footer1 />}
-        {footerStyle == 1 ? <Footer1 /> : null}
-        {footerStyle == 2 ? <Footer2 /> : null}
+        {!footerStyle && <Footer />}
+        {footerStyle == 1 ? <Footer /> : null}
       </div>
       <BackToTop scroll={scroll} />
     </>
