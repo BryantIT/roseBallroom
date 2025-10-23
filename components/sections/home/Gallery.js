@@ -62,11 +62,11 @@ const galleryItems = [
   },
 ]
 
-export default function GalleryOne() {
+export default function Gallery() {
   const [columns, setColumns] = useState(3)
 
   return (
-    <section className='gallery-one'>
+    <section className='gallery'>
       <div className='container'>
         <div className='section-title text-center'>
           <div className='section-title__tagline-box'>
@@ -82,15 +82,15 @@ export default function GalleryOne() {
               key={index}
               className={`col-xl-${index === 8 ? 3 : 3} col-lg-6 col-md-6`}
             >
-              <div className='gallery-one__single'>
-                <div className='gallery-one__img'>
+              <div className='gallery__single'>
+                <div className='gallery__img'>
                   <img src={item.src} alt={item.alt} />
-                  <div className='gallery-one__content'>
-                    <div className='gallery-one__sub-title-box'>
-                      <div className='gallery-one__sub-title-shape'></div>
-                      <p className='gallery-one__sub-title'>{item.subtitle}</p>
+                  <div className='gallery__content'>
+                    <div className='gallery__sub-title-box'>
+                      <div className='gallery__sub-title-shape'></div>
+                      <p className='gallery__sub-title'>{item.subtitle}</p>
                     </div>
-                    <h4 className='gallery-one__title'>
+                    <h4 className='gallery__title'>
                       <Link href={item.href}>{item.title}</Link>
                     </h4>
                   </div>

@@ -4,7 +4,7 @@ import Reasons from '@/components/sections/home/Reasons'
 import SlidingText from '@/components/sections/home/SlidingText'
 import TeamOne from '@/components/sections/home/TeamOne'
 import DanceNumbers from '@/components/sections/home/DanceNumbers'
-import GalleryOne from '@/components/sections/home/GalleryOne'
+import Gallery from '@/components/sections/home/Gallery'
 import CTA from '@/components/sections/home/CTA'
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         <SlidingText />
         <TeamOne />
         <DanceNumbers />
-        <GalleryOne />
+        <Gallery />
         <CTA />
       </Layout>
     </>

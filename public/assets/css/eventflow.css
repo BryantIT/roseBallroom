@@ -3120,28 +3120,28 @@ ul {
 /*--------------------------------------------------------------
 # Gallery One
 --------------------------------------------------------------*/
-.gallery-one {
+.gallery {
   position: relative;
   display: block;
   padding: 120px 0 110px;
   z-index: 1;
 }
 
-.gallery-one .container {
+.gallery .container {
   max-width: 1572px;
 }
 
-.gallery-one .row {
+.gallery .row {
   --bs-gutter-x: 10px;
 }
 
-.gallery-one__single {
+.gallery__single {
   position: relative;
   display: block;
   margin-bottom: 10px;
 }
 
-.gallery-one__img {
+.gallery__img {
   width: 378px;
   height: 407px;
   position: relative;
@@ -3151,7 +3151,7 @@ ul {
   z-index: 1;
 }
 
-.gallery-one__img::before {
+.gallery__img::before {
   position: absolute;
   content: '';
   top: 0;
@@ -3165,11 +3165,11 @@ ul {
   z-index: 1;
 }
 
-.gallery-one__single:hover .gallery-one__img::before {
+.gallery__single:hover .gallery__img::before {
   opacity: 0.4;
 }
 
-.gallery-one__img img {
+.gallery__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -3179,11 +3179,11 @@ ul {
   transition: transform 1s ease-in-out;
 }
 
-.gallery-one__single:hover .gallery-one__img img {
+.gallery__single:hover .gallery__img img {
   transform: scale(1.05) rotate(0deg);
 }
 
-.gallery-one__content {
+.gallery__content {
   position: absolute;
   bottom: 10px;
   left: 10px;
@@ -3198,14 +3198,14 @@ ul {
   z-index: 2;
 }
 
-.gallery-one__single:hover .gallery-one__content {
+.gallery__single:hover .gallery__content {
   transform: translateX(0%);
   visibility: visible;
   opacity: 1;
   transition-delay: 500ms;
 }
 
-.gallery-one__sub-title-box {
+.gallery__sub-title-box {
   position: relative;
   display: flex;
   align-items: center;
@@ -3213,7 +3213,7 @@ ul {
   margin-bottom: 15px;
 }
 
-.gallery-one__sub-title-shape {
+.gallery__sub-title-shape {
   position: relative;
   display: block;
   width: 8px;
@@ -3229,23 +3229,23 @@ ul {
   );
 }
 
-.gallery-one__sub-title {
+.gallery__sub-title {
   font-size: 16px;
   line-height: 16px;
   color: var(--rose-white);
 }
 
-.gallery-one__title {
+.gallery__title {
   font-size: 24px;
   font-weight: 700;
   line-height: 34px;
 }
 
-.gallery-one__title a {
+.gallery__title a {
   color: var(--rose-white);
 }
 
-.gallery-one__title a:hover {
+.gallery__title a:hover {
   color: var(--rose-primary);
 }
 
