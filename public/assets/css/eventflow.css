@@ -2859,44 +2859,49 @@ ul {
 /*--------------------------------------------------------------
 # Team One
 --------------------------------------------------------------*/
-.team-one {
+.team {
   position: relative;
   display: block;
   padding: 120px 0 90px;
   z-index: 1;
 }
 
-.team-one__single {
+.team__single {
   position: relative;
   display: block;
   margin-bottom: 30px;
 }
 
-.team-one__img-box {
+.team__img-box {
   position: relative;
   display: block;
 }
 
-.team-one__img {
-  position: relative;
-  display: block;
-  overflow: hidden;
+/* Force a fixed 410x455 frame */
+.team__img {
+  width: 410px;
+  height: 455px;
   border-radius: 20px;
-  z-index: 1;
+  overflow: hidden; /* you already have this */
+  position: relative;
 }
 
-.team-one__img img {
+/* Make the image fill that frame without squishing */
+.team__img img {
   width: 100%;
-  border-radius: 20px;
+  height: 100%;
+  object-fit: cover; /* crop to fill */
+  object-position: center; /* center the crop */
+  border-radius: 20px; /* optional, in case overflow is changed later */
   transform: scale3d(1, 1, 1);
   transition: transform 1s ease-in-out;
 }
 
-.team-one__single:hover .team-one__img img {
+.team__single:hover .team__img img {
   transform: scale(1.05) rotate(0deg);
 }
 
-.team-one__content {
+.team__content {
   position: absolute;
   bottom: 30px;
   left: 30px;
@@ -2911,29 +2916,29 @@ ul {
   z-index: 2;
 }
 
-.team-one__single:hover .team-one__content {
+.team__single:hover .team__content {
   visibility: hidden;
   transform: translateY(150%);
   opacity: 0;
 }
 
-.team-one__name {
+.team__name {
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 20px;
 }
 
-.team-one__name a {
+.team__name a {
   color: var(--rose-white);
 }
 
-.team-one__sub-title {
+.team__sub-title {
   line-height: 16px;
   color: var(--rose-white);
 }
 
-.team-one__content-hover {
+.team__content-hover {
   position: absolute;
   bottom: 30px;
   left: 30px;
@@ -2957,33 +2962,33 @@ ul {
   z-index: 2;
 }
 
-.team-one__single:hover .team-one__content-hover {
+.team__single:hover .team__content-hover {
   visibility: visible;
   transform: translateY(0%);
   opacity: 1;
 }
 
-.team-one__name-hover {
+.team__name-hover {
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 20px;
 }
 
-.team-one__name-hover a {
+.team__name-hover a {
   color: var(--rose-white);
 }
 
-.team-one__name-hover a:hover {
+.team__name-hover a:hover {
   color: var(--rose-black);
 }
 
-.team-one__sub-title-hover {
+.team__sub-title-hover {
   line-height: 16px;
   color: var(--rose-white);
 }
 
-.team-one__text-hover {
+.team__text-hover {
   margin-top: 15px;
 }
 
@@ -10519,14 +10524,14 @@ ul {
     margin-top: 60px;
   }
 
-  .team-one__content-hover {
+  .team__content-hover {
     bottom: 10px;
     left: 10px;
     right: 10px;
     padding: 27px 15px 29px;
   }
 
-  .team-one__content {
+  .team__content {
     bottom: 20px;
     left: 20px;
     right: 20px;
@@ -11489,5 +11494,14 @@ ul {
 
   .main-menu-two .main-menu__search {
     margin-left: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .team__img {
+    width: 100%;
+    max-width: 410px;
+    aspect-ratio: 410 / 455;
+    height: auto; /* aspect-ratio will set the height */
   }
 }

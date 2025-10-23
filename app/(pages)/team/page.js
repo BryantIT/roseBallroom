@@ -61,24 +61,24 @@ export default function Home() {
                     }`}
                     data-wow-delay={`${(index + 1) * 100}ms`}
                   >
-                    <div className='team-one__single'>
-                      <div className='team-one__img-box'>
-                        <div className='team-one__img'>
+                    <div className='team__single'>
+                      <div className='team__img-box'>
+                        <div className='team__img'>
                           <img src={member.img} alt={member.name} />
-                          <div className='team-one__content'>
-                            <h4 className='team-one__name'>
+                          <div className='team__content'>
+                            <h4 className='team__name'>
                               <a href='team-details'>{member.name}</a>
                             </h4>
-                            <p className='team-one__sub-title'>{member.role}</p>
+                            <p className='team__sub-title'>{member.role}</p>
                           </div>
-                          <div className='team-one__content-hover'>
-                            <h4 className='team-one__name-hover'>
+                          <div className='team__content-hover'>
+                            <h4 className='team__name-hover'>
                               <a href='team-details'>{member.name}</a>
                             </h4>
-                            <p className='team-one__sub-title-hover'>
+                            <p className='team__sub-title-hover'>
                               {member.role}
                             </p>
-                            <p className='team-one__text-hover'>
+                            <p className='team__text-hover'>
                               {member.description}
                             </p>
                           </div>
