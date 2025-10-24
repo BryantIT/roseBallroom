@@ -37,13 +37,13 @@
   --rose-white-rgb: 255, 250, 252;
 
   --rose-primary: #b20d5d;
-  --rose-primary-rgb: 178, 13, 93; /* already correct */
+  --rose-primary-rgb: 178, 13, 93;
 
   --rose-black: #04000a;
-  --rose-black-rgb: 4, 0, 10; /* already correct */
+  --rose-black-rgb: 4, 0, 10; 
 
   --rose-accent: #4a0ab4;
-  --rose-accent-rgb: 74, 10, 180; /* already correct */
+  --rose-accent-rgb: 74, 10, 180;
 
   --rose-secondary: #e1a2b8;
   --rose-secondary-rgb: 225, 162, 184;
@@ -7001,6 +7001,13 @@ ul {
   background-size: cover;
   background-position: center;
   z-index: -1;
+
+  /* NEW: brand gradient background (with subtle glow + sweep) */
+  background-color: var(--rose-black);
+  background-image:
+    radial-gradient(60% 80% at 20% 30%, rgba(var(--rose-accent-rgb), 0.35) 0%, rgba(0,0,0,0) 60%),
+    radial-gradient(50% 70% at 80% 70%, rgba(var(--rose-primary-rgb), 0.35) 0%, rgba(0,0,0,0) 60%),
+    linear-gradient(120deg, var(--rose-black) 0%, var(--rose-primary) 55%, var(--rose-secondary) 100%);
 }
 
 .page-header__bg::before {
@@ -7010,11 +7017,15 @@ ul {
   top: 0;
   bottom: 0;
   right: 0;
+
+  /* NEW: overlay using your brand black for better legibility */
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.87) 24.4%,
-    rgba(102, 102, 102, 0) 100%
+    rgba(var(--rose-black-rgb), 0.78) 22%,
+    rgba(var(--rose-black-rgb), 0) 100%
   );
+
+  pointer-events: none; /* ensure clicks pass through */
 }
 
 .page-header__inner {

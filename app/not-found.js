@@ -19,7 +19,7 @@ export default function Error404() {
                       Sorry we can't find that page!
                     </h3>
                     <p className='error-page__text'>
-                      The page you are looking for was never existed.
+                      Click HOME to get back on the dance floor.
                     </p>
                     <form className='error-page__form'>
                       <div className='error-page__form-input'>
