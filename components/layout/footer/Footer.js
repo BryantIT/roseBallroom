@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ADDRESS, EMAIL, PHONE } from '../../../app/helpers/constants'
 
 export default function Footer() {
   return (
@@ -49,14 +50,14 @@ export default function Footer() {
                       <li>
                         <p>October 17th At 8:00pm</p>
                         <h5>Pumpkin Spice Theme Night</h5>
-                        <Link href='/event-details'>
+                        <Link href='/contact'>
                           Free Lesson <span className='icon-arrow-right'></span>
                         </Link>
                       </li>
                       <li>
                         <p>October 24th At 8:00pm</p>
                         <h5>Halloween Theme Night</h5>
-                        <Link href='/event-details'>
+                        <Link href='/contact'>
                           Free Lesson <span className='icon-arrow-right'></span>
                         </Link>
                       </li>
@@ -125,7 +126,7 @@ export default function Footer() {
                           <div className='text'>
                             <p>
                               <a href='mailto:roseballroom2023@gmail.com'>
-                                roseballroom2023@gmail.com
+                                {EMAIL}
                               </a>
                             </p>
                           </div>
@@ -135,7 +136,7 @@ export default function Footer() {
                             <span className='icon-pin'></span>
                           </div>
                           <div className='text'>
-                            <p>117 N Main Street , Dickson, TN</p>
+                            <p>{ADDRESS}</p>
                           </div>
                         </li>
                         <li>
@@ -144,7 +145,7 @@ export default function Footer() {
                           </div>
                           <div className='text'>
                             <p>
-                              <a href='tel:(615) 375-1204'>(615) 375-1204</a>
+                              <a href='tel:(615) 375-1204'>{PHONE}</a>
                             </p>
                           </div>
                         </li>

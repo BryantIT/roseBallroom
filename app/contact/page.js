@@ -1,18 +1,22 @@
 import Layout from '@/components/layout/Layout'
 import Link from 'next/link'
+import { ADDRESS, EMAIL, PHONE } from '../helpers/constants'
+
 export default function Home() {
   return (
     <>
-      <Layout headerStyle={4} footerStyle={1} breadcrumbTitle='CONTACT US'>
+      <Layout headerStyle={1} footerStyle={1} breadcrumbTitle='CONTACT US'>
         <div>
           {/*Contact One Start*/}
           <section className='contact-one'>
             <div className='container'>
               <div className='contact-one__inner'>
-                <h3 className='contact-one__title'>Write here below?</h3>
+                <h3 className='contact-one__title'>
+                  We want to hear from you!
+                </h3>
                 <p className='contact-one__text'>
-                  For your car we will do everything advice, repairs and they
-                  can maintenance. We are the some preferred choice
+                  Send us a message using the form below, email, call, or drop
+                  by. Be sure to mention you are interested in a free lesson!
                 </p>
                 <form
                   className='contact-form-validated contact-one__form'
@@ -51,33 +55,7 @@ export default function Home() {
                         />
                       </div>
                     </div>
-                    <div className='col-xl-6 col-lg-6'>
-                      <div className='contact-one__input-box'>
-                        <div className='select-box'>
-                          <select
-                            className='selectmenu wide'
-                            defaultValue='Choose Option'
-                          >
-                            <option value='Choose Option'>Choose Option</option>
-                            <option value='Type Of Service 01'>
-                              Type Of Service 01
-                            </option>
-                            <option value='Type Of Service 02'>
-                              Type Of Service 02
-                            </option>
-                            <option value='Type Of Service 03'>
-                              Type Of Service 03
-                            </option>
-                            <option value='Type Of Service 04'>
-                              Type Of Service 04
-                            </option>
-                            <option value='Type Of Service 05'>
-                              Type Of Service 05
-                            </option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
+
                     <div className='col-xl-12'>
                       <div className='contact-one__input-box text-message-box'>
                         <textarea
@@ -113,10 +91,7 @@ export default function Home() {
                       <span className='icon-pin'></span>
                     </div>
                     <h3 className='contact-two__title'>Location</h3>
-                    <p className='contact-two__text'>
-                      2972 Westheimer Rd. Santa Ana, <br />
-                      Illinois 85486
-                    </p>
+                    <p className='contact-two__text'>{ADDRESS}</p>
                   </div>
                 </div>
                 {/* Contact Two Single End */}
@@ -129,14 +104,7 @@ export default function Home() {
                     </div>
                     <h3 className='contact-two__title'>E-mail</h3>
                     <p className='contact-two__text'>
-                      <a href='mailto:tim.jennings@example.com'>
-                        tim.jennings@example.com
-                      </a>
-                    </p>
-                    <p className='contact-two__text'>
-                      <a href='mailto:debra.holt@example.com'>
-                        debra.holt@example.com
-                      </a>
+                      <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
                     </p>
                   </div>
                 </div>
@@ -150,11 +118,7 @@ export default function Home() {
                     </div>
                     <h3 className='contact-two__title'>Contact</h3>
                     <p className='contact-two__text'>
-                      <a href='tel:019457896332'>019457896332</a>,{' '}
-                      <a href='tel:017485962546'>017485962546</a>
-                    </p>
-                    <p className='contact-two__text'>
-                      <a href='tel:016457896333'>016457896333</a>
+                      <a href={`tel:${PHONE}`}>{PHONE}</a>
                     </p>
                   </div>
                 </div>
@@ -164,7 +128,7 @@ export default function Home() {
           </section>
           {/*Contact Two End*/}
 
-          {/*CTA One Start*/}
+          {/*CTA Start*/}
           <section className='cta'>
             <div className='container'>
               <div className='cta__inner'>
@@ -190,7 +154,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          {/*CTA One End*/}
+          {/*CTA End*/}
         </div>
       </Layout>
     </>
